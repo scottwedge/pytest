@@ -4,7 +4,5 @@ def test_add():
 
     result = calc.add(3, 5)  # Act
 
-    assert result = 8        # Assert
+    assert result == 8        # Assert
 
-
-    
