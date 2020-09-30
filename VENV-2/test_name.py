@@ -1,3 +1,3 @@
 
-def my_first_test():
-    return True
+def test_my_first_test():
+    assert False
