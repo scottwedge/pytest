@@ -7,3 +7,27 @@ def test_add():
 
     assert result == 8       # Assert
 
+
+def test_subtract():
+    calc = Calculator()      # Arrange
+
+    result = calc.subtract(9, 5)  # Act
+
+    assert result == 4       # Assert
+
+
+def test_multiply():
+    calc = Calculator()      # Arrange
+
+    result = calc.multiply(3, 5)  # Act
+
+    assert result == 15      # Assert
+
+
+def test_divide():
+    calc = Calculator()      # Arrange
+
+    result = calc.divide(8, 2)  # Act
+
+    assert result == 4       # Assert
+
