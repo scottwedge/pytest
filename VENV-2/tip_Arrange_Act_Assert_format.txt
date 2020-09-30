@@ -1,0 +1,8 @@
+# tip
+
+# Want test in three phases:
+# Arrange
+
+# Act
+
+# Assert
