@@ -8,7 +8,7 @@ class Calculator():
         try:
             return x + y
         except:
-            raise CalculatorError("addition error")
+            raise TypeError
 
     def subtract(self, x, y):
         return x - y
