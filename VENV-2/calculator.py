@@ -1,6 +1,10 @@
 class CalculatorError(Exception):
     pass
 
+class CalculatorZeroDivError(Exception):
+    pass
+
+
 class Calculator():
     """ A terrible calculator design """
 
@@ -9,6 +13,9 @@ class Calculator():
             return x + y
         except TypeError:
             raise CalculatorError
+        except ZeroDivisionError:
+#            raise CalculatorZeroDivError
+             pass
 
     def subtract(self, x, y):
         return x - y

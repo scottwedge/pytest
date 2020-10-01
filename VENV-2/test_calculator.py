@@ -1,6 +1,6 @@
 import pytest
 
-from calculator import Calculator, CalculatorError
+from calculator import Calculator, CalculatorError, CalculatorZeroDivError
 
 def test_add():
     calc = Calculator()      # Arrange
@@ -16,7 +16,12 @@ def test_add_weird_stuff():
     with pytest.raises(CalculatorError):
         result = calc.add("three", 5)  # Act
 
-#    assert result == 8       # Assert
+
+def test_add_weirder_stuff():
+    calc = Calculator()      # Arrange
+
+    with pytest.raises(ZeroDivisionError):
+        result = calc.add(1/0, 5)  # Act
 
 
 def test_subtract():
