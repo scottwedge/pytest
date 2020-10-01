@@ -7,7 +7,7 @@ class Calculator():
     def add(self, x, y):
         try:
             return x + y
-        except:
+        except TypeError:
             raise CalculatorError
 
     def subtract(self, x, y):
