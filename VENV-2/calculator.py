@@ -1,5 +1,5 @@
 class CalculatorError(Exception):
-    pass
+    pass 
 
 class CalculatorZeroDivError(Exception):
     pass
