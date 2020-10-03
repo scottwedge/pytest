@@ -13,9 +13,10 @@ class Calculator():
             return x + y
         except TypeError:
             raise CalculatorError
-        except ZeroDivisionError:
-#            raise CalculatorZeroDivError
-             pass
+        except SyntaxError:
+            raise CalculatorError
+        except NameError:
+            raise CalculatorError
 
     def subtract(self, x, y):
         return x - y

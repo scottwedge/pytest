@@ -20,8 +20,8 @@ def test_add_weird_stuff():
 def test_add_weirder_stuff():
     calc = Calculator()      # Arrange
 
-    with pytest.raises(ZeroDivisionError):
-        result = calc.add(1/0, 5)  # Act
+    with pytest.raises(CalculatorError):
+        result = calc.add(1, k)  # Act
 
 
 def test_subtract():
