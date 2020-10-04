@@ -20,7 +20,7 @@ def test_add_weird_stuff():
 def test_add_weirder_stuff():
     calc = Calculator()      # Arrange
 
-    with pytest.raises(CalculatorError):
+    with pytest.raises(NameError):
         result = calc.add(1, k)  # Act
 
 
@@ -47,3 +47,8 @@ def test_divide():
 
     assert result == 4       # Assert
 
+def test_divide_by_zero():
+    calc = Calculator()       # Arrange
+
+    with pytest.raises(ZeroDivisionError):  # Act
+        result = calc.divide (5, 0)  # Act
